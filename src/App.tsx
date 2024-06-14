@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import Counter from './components/Counter';
-import TasksMenu from './components/TasksMenu';
+import Counter from './components/Counter/Counter';
+import TasksMenu from './components/TasksMenu/TasksMenu';
 import './App.css';
 
 const App: React.FC = () => {

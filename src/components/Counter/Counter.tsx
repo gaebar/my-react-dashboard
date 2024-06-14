@@ -16,7 +16,7 @@ const Counter: FC = () => {
 
   return (
     <div className="counter-container">
-      <h2 className="counter-title">Task 1</h2>
+      <h2 className="counter-title">Task 1: Counter</h2>
       <h3 className="counter-number">Number: {number}</h3>
       <div className="counter-buttons">
         <button onClick={increment}>Increase</button>
