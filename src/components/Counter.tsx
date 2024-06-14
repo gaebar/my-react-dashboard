@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
+import './Counter.css';
 
-const Counter: React.FC = () => {
+const Counter: FC = () => {
   const [number, setNumber] = useState<number>(0);
 
   const increment = () => {
@@ -14,11 +15,13 @@ const Counter: React.FC = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#D4D4A7', padding: '10px', borderRadius: '5px' }}>
-      <h2>Task 1</h2>
-      <h3>Number: {number}</h3>
-      <button onClick={increment}>Increase</button>
-      <button onClick={decrement} disabled={number === 0}>Decrease</button>
+    <div className="counter-container">
+      <h2 className="counter-title">Task 1</h2>
+      <h3 className="counter-number">Number: {number}</h3>
+      <div className="counter-buttons">
+        <button onClick={increment}>Increase</button>
+        <button onClick={decrement} disabled={number === 0}>Decrease</button>
+      </div>
     </div>
   );
 };
