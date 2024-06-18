@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import Counter from './components/Counter/Counter';
-import TasksMenu from './components/TasksMenu/TasksMenu';
 import TodoList from './components/TodoList/TodoList'; 
 import './App.css';
 
@@ -10,12 +9,11 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="container">
-        <TasksMenu />
+        <Dashboard />
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<div />} />
           <Route path="/task1" element={<Counter />} />
           <Route path="/task2" element={<TodoList />} />
-          {/* Add routes for other tasks here */}
         </Routes>
       </div>
     </Router>

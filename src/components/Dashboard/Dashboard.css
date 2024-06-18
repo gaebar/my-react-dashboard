@@ -1,12 +1,23 @@
-.tasks-menu {
-  background-color: #D4A017;
+/* src/components/Dashboard/Dashboard.css */
+.dashboard-container {
+  background-color: #eac170;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.dashboard-title {
+  background-color: #0000FF;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .buttons-container {
@@ -14,17 +25,15 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .task-button {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #007BFF;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  min-width: 70px;
 }
 
 .task-button:hover {

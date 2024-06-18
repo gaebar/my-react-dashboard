@@ -28,7 +28,7 @@ const TodoList: React.FC = () => {
 
   return (
     <div className="todo-list-container">
-      <div className="task-title">Task 2</div>
+      <h1 className="task-title">Task 2</h1>
       <h3>To-Do List</h3>
       <div className="input-container">
         <input

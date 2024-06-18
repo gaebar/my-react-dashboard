@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './TasksMenu.css';
+import './Dashboard.css';
 
-const TasksMenu: React.FC = () => {
+const Dashboard: React.FC = () => {
   return (
-    <div className="tasks-menu">
-      <h2>Angular/React Task</h2>
+    <div className="dashboard-container">
+      <h1>Angular/React Task</h1>
       <div className="buttons-container">
         <Link to="/task1"><button className="task-button">Task 1</button></Link>
         <Link to="/task2"><button className="task-button">Task 2</button></Link>
@@ -19,4 +19,4 @@ const TasksMenu: React.FC = () => {
   );
 };
 
-export default TasksMenu;
+export default Dashboard;
