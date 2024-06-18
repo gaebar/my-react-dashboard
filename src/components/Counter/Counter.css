@@ -1,44 +1,39 @@
 .counter-container {
-    background-color: #D4D4A7;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 20px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .counter-title {
-    background-color: #0000FF;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  .counter-number {
-    font-size: 24px;
-    margin: 20px 0;
-  }
-  
-  .counter-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .counter-buttons button {
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    min-width: 100px;
-  }
-  
-  .counter-buttons button:disabled {
-    background-color: #D3D3D3;
-    cursor: not-allowed;
-  }
-  
+  background-color: #D4D4A7;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-title {
+  background-color: #0000FF;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px; /* Ensure the font size is the same */
+}
+
+.counter-number {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.counter-buttons button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-buttons button:hover {
+  background-color: #0056b3;
+}
