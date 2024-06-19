@@ -33,7 +33,7 @@ const FormValidation: React.FC = () => {
 
   return (
     <div className="form-container">
-      <h1>Task 3</h1>
+      <h1 className="form-title">Task 3</h1>
       <h3>Form Validation</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
