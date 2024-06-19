@@ -1,0 +1,54 @@
+.user-details-container {
+    background-color: #D4D4A7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .task-title {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .user-table th {
+    background-color: #007BFF;
+    color: white;
+    text-align: left;
+  }
+  
+  .user-table tr {
+    background-color: #f9f9f9; /* Single background color for rows */
+  }
+  
+  .user-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .user-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #007BFF;
+    color: white;
+  }
+  
