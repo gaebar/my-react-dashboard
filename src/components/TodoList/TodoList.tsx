@@ -7,9 +7,13 @@ interface TodoItem {
 }
 
 const TodoList: React.FC = () => {
+  // State to store the list of to-do items
   const [items, setItems] = useState<TodoItem[]>([]);
+  
+  // State to store the current input value for a new item
   const [newItem, setNewItem] = useState<string>('');
 
+  // Function to add a new item to the list
   const addItem = () => {
     if (newItem.trim() === '') return;
 
@@ -18,11 +22,15 @@ const TodoList: React.FC = () => {
       text: newItem.trim(),
     };
 
+    // Update the items state with the new item
     setItems([...items, newItemObject]);
+    // Clear the input field
     setNewItem('');
   };
 
+  // Function to remove an item from the list based on its ID
   const removeItem = (id: number) => {
+    // Update the items state by filtering out the item with the given ID
     setItems(items.filter(item => item.id !== id));
   };
 
@@ -40,7 +48,7 @@ const TodoList: React.FC = () => {
         <button onClick={addItem}>Add</button>
       </div>
       <div className="items-container">
-        <h3>View todo list Items:</h3>
+        <h3>View To-Do List Items:</h3>
         <ul>
           {items.map(item => (
             <li key={item.id}>
