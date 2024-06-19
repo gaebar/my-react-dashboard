@@ -1,0 +1,34 @@
+.image-upload-container {
+    background-color: #D4D4A7;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .task-title {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .image-preview {
+    margin-bottom: 20px;
+  }
+  
+  .circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  
