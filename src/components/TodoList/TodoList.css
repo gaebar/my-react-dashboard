@@ -16,7 +16,7 @@
     border-radius: 5px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 24px; /* Ensure the font size is the same */
+    font-size: 24px; 
   }
   
   .input-container {
@@ -55,9 +55,9 @@
   }
   
   .items-container ul {
-    list-style-type: disc; /* Ensure bullets are shown */
+    list-style-type: disc; 
     padding-left: 20px;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
   }
   
   .items-container li {
@@ -69,7 +69,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 10px;
-    list-style-type: disc; /* Ensure each item has a bullet */
+    list-style-type: disc;
   }
   
   .items-container button {

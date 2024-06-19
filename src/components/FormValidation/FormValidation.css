@@ -9,30 +9,36 @@
     margin-right: auto;
   }
   
-  .form-container h1 {
+  .form-title {
     background-color: #0000FF;
     color: white;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
   }
   
   .form-group {
+    display: flex;
+    justify-content: center;
     margin-bottom: 15px;
     text-align: left;
   }
   
   .form-group label {
-    display: block;
+    flex: 1;
+    margin-right: 10px;
     font-weight: bold;
-    margin-bottom: 5px;
+    text-align: right;
   }
   
   .form-group input {
-    width: 100%;
+    flex: 2;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 300px;
   }
   
   button[type="submit"] {
@@ -52,5 +58,10 @@
   
   button[type="submit"]:not(:disabled):hover {
     background-color: #0056b3;
+  }
+  
+  .form-values {
+    text-align: left;
+    margin-top: 20px;
   }
   

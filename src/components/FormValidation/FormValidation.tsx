@@ -2,34 +2,33 @@ import React, { useState, useEffect } from 'react';
 import './FormValidation.css';
 
 const FormValidation: React.FC = () => {
-  // State variables to store form input values
+  // State definitions to manage the input values of the form
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [contact, setContact] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const [isFormValid, setIsFormValid] = useState<boolean>(false); // State to track form validity
-  const [submitted, setSubmitted] = useState<boolean>(false); // State to track form submission
+  const [isFormValid, setIsFormValid] = useState<boolean>(false);
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  // useEffect to validate the form whenever any input changes
+  // Effect to validate the form whenever any of the inputs change
   useEffect(() => {
     validateForm();
   }, [name, email, contact, password]);
 
-  // Function to validate the form inputs
+  // Function to validate the form
   const validateForm = () => {
     const isNameValid = name.trim() !== '';
     const isEmailValid = email.includes('@');
     const isContactValid = /^\d{10}$/.test(contact);
     const isPasswordValid = password.length >= 8;
 
-    // Set the form validity based on individual input validations
     setIsFormValid(isNameValid && isEmailValid && isContactValid && isPasswordValid);
   };
 
   // Function to handle form submission
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    setSubmitted(true); // Set the form as submitted
+    e.preventDefault();
+    setSubmitted(true);
   };
 
   return (
