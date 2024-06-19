@@ -74,4 +74,4 @@ Fetches user details from the API endpoint [JSONPlaceholder](https://jsonplaceho
 Displays user profile information including name, email, and contact. Allows users to edit their profile information and upload a profile photo. The profile photo is displayed in a circular format.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENCE).
